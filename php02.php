@@ -111,5 +111,4 @@ echo round(9.5).';';
 echo '<br>';
 echo 'floor 9.5 = ' . PHP_EOL;
 echo floor(9.5).';';
-
 ?>
