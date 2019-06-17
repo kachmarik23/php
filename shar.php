@@ -1,5 +1,8 @@
 <?php
-$arr=['Да','Нет','Иди в жопу'];
+$arr=['Да','Нет','Иди в жопу', false, null];
+$x=15;
+var_dump($arr);
+die(''.$x);
 shuffle($arr);
 echo $arr[0];
 echo '<br>';
