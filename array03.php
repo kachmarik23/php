@@ -52,5 +52,29 @@ $car2=[
     ]
 ];
 $car2['owner']['age']=null;
-print_r($car2)
+print_r($car2);
+echo '<br>';
+$arr=[123,345,567,789];
+print_r($arr).PHP_EOL;
+echo '<br>';
+$tmp=$arr[1];
+$arr[1]=$arr[0];
+$arr[0]=$tmp;
+print_r($arr);
+echo '<br>';
+$arr=[123,568,4,8,459,56];
+$arrBackup = $arr;// что бы сравнить массивы до и после
+echo'Массив до сортировки: ';
+print_r($arr);
+sort($arr);
+echo '<br>Массив после сортировки sort(): ';
+print_r($arr);
+$arr=[123,568,4,8,459,56];
+
+asort($arr);
+echo '<br>Массив после сортировки asort(): ';
+print_r($arr);
+ksort($arr);
+echo '<br>Вернули массив в исходное состояние отсортировав его по ключам ksort: ';
+print_r($arr);
 ?>
