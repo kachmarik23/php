@@ -81,4 +81,34 @@ echo '<br>';
 foreach ($arr as $a=>$b){
     echo "$a<br>";
 }
+
+$arr=[
+
+    0=>['name'=>'vova','age'=>'34'],
+    1=>['name'=>'grisha','age'=>'72']
+
+];
+foreach ($arr as $index=>$value){
+    foreach ($value as $name=>$dat){
+        echo "$name ==> $dat <br>";
+    }
+}
+echo '<br>';
+$arrFlp=[
+    0=>'one',
+    1=>'two'
+];
+foreach (array_flip($arrFlp) as $keys){
+    echo "$keys<br>";
+}
+
+$arrAssoc=[
+    1=>'un',
+    2=>'dos',
+    3=>'tres'
+];
+foreach($arrAssoc as $key => $value){
+    $arrAssoc[$key]=$value.'-hello';
+   }
+print_r($arrAssoc);
 ?>
