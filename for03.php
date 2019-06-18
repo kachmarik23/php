@@ -40,7 +40,7 @@ while(Sa<5){
 echo '<br>';
 $a=2;
 $canter = 0;
-while($a<1000000){
+while($a<1000000 && $canter < 100){
     $a*=$a;
     $canter++;
 }
@@ -55,5 +55,30 @@ While($a<1000000 && $limit>0){
     $limit--;
 }
 echo $canter;
+echo '<br>';
+$a = 0;
+do{
+    $a++;
+    echo "$a<br>";
+}while($a<10);
 
+$i=0;
+while($i<10){
+    echo $i;
+    $i++;
+}
+
+echo '<br>';
+$arr=[
+    0=>'один',
+    10=>'два',
+    200=>'три'
+];
+foreach ($arr as $index=>$value){
+      echo"$index ==> $value <br>";
+}
+echo '<br>';
+foreach ($arr as $a=>$b){
+    echo "$a<br>";
+}
 ?>
