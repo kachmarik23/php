@@ -8,7 +8,25 @@
     <title>Document</title>
 </head>
 <body>
+<table border="1">
+    <thead>
+        <th>ID</th>
+        <th>VALUE</th>
+    </thead>
+    <tbody>
 
+        <?php
+        const ARR_LEN=100;
+        $arr=[];
+        for ($i=0;$i<100;$i++){
+            $arr[]=rand(1,100);
+
+        echo "<tr><td>$i</td><td>$arr=[$i]</td></tr>";
+        }
+        ?>
+
+     </tbody>
+</table>
 </body>
 </html>
 
