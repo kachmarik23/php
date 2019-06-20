@@ -12,17 +12,18 @@
     <thead>
     <th></th>
     <?php
+    const LEN=10;
     $arrTd = [];
-    for ($i = 1; $i <= 10; $i++) {
+    for ($i = 1; $i <= LEN; $i++) {
         echo '<th>' . $i . '</th>';
         $arrTd[] = $i;
     }
     echo '    </thead>
     <tbody>';
 
-    for ($i = 1; $i <= 10; $i++) {
+    for ($i = 1; $i <= LEN; $i++) {
         echo "<tr><td>$i</td>";
-        for ($j = 1; $j <= 10; $j++) {
+        for ($j = 1; $j <= LEN; $j++) {
             echo "<td>" . $j * $i . "</td>";
         }
         echo "</tr>";
