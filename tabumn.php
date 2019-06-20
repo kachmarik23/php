@@ -10,21 +10,25 @@
 <body>
 <table border="1">
     <thead>
-    <th>ID</th>
-    <th>VALUE</th>
-    </thead>
-    <tbody>
+    <th></th>
     <?php
-    const ARR_LEN = 100;
-    $arr = [];
-    for ($i = 0; $i < 100; $i++) {
-        $arr[] = rand(1, 100);
+    $arrTd = [];
+    for ($i = 1; $i <= 10; $i++) {
+        echo '<th>' . $i . '</th>';
+        $arrTd[] = $i;
+    }
+    echo '    </thead>
+    <tbody>';
 
-        echo "<tr><td>$i</td><td>$arr=[$i]</td></tr>";
+    for ($i = 1; $i <= 10; $i++) {
+        echo "<tr><td>$i</td>";
+        for ($j = 1; $j <= 10; $j++) {
+            echo "<td>" . $j * $i . "</td>";
+        }
+        echo "</tr>";
     }
     ?>
     </tbody>
 </table>
 </body>
 </html>
-

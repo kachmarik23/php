@@ -12,7 +12,8 @@ $html='
         <th>ID</th>
         <th>VALUE</th>
     </thead>
-    <tbody>
+    <tbody>';
+$html.='   
         <tr>
             <td>0</td>
             <td>VALUE 0</td>
