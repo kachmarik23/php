@@ -59,3 +59,38 @@ foreach ($arr as $value){
 }
 echo '<br>';
 echo '<br>Задание№ 8<br>';
+$arr=[];
+for ($i=1; $i< 10; $i++){
+    $arr[]=$i;
+}
+foreach ($arr as $value){
+    $str.=$value;
+}
+var_dump($str);
+echo '<br>';
+echo '<br>Задание№ 9<br>';
+/*
+for($i=1;$i<=100;$i++){
+   echo '<br>'.$arr[]=$i;
+}
+$i=1;
+while ($i<=100){
+    echo '<br>'.$i;
+    $i++;
+}
+*///работает но занимает много места
+echo '<br>';
+echo '<br>Задание№ 10<br>';
+$i=11;
+while ($i<=33){
+    echo '<br>'.$i;
+    $i++;
+}
+echo '<br>';
+echo '<br>Задание№ 11<br>';
+for($i=0;$i<=100;$i++){
+    $j=$i%2;
+    if ($j===0){
+        echo $i.'<br>';
+    }
+}
