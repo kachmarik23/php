@@ -8,7 +8,12 @@ function sum($a,$b){
     return $summ;
 }
 
-function compare ($a,$b){
+/**
+ * @param int $a
+ * @param int $b
+ * @return bool
+ */
+function compare (int $a, int $b){
     if ($a>$b){
     $result=true;
     }else{
@@ -17,6 +22,8 @@ function compare ($a,$b){
 
     return $result;
 }
+
+
 
 function testRet($a,$b){
     if ($a<$b){

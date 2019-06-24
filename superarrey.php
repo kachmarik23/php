@@ -1,6 +1,5 @@
 <?php
-print_r($_SERVER);
-/*
+
 $a=5;
 $b=10;
 print_r($GLOBALS);
@@ -11,13 +10,13 @@ function test()
     global $b;//$b = $CLOBALS['b'];
 }
 
-/*
+
 print_r($_COOKIE);
-/*
+
 setcookie('testname','test cookie value');
 die('cookies set');
 
-/*
+
 if (empty($_FILES['login'])){
     $html = "<form action='superarrey.php' method='post' enctype='multipart/form-data'>
 <input type='file' name='login'>
@@ -47,5 +46,5 @@ if(isset($_GET['name'])){
 }
 die('NAME NOT SET');
 echo '<br>';
-*/
+
 ?>
