@@ -21,3 +21,7 @@ if(compare($a,$b)){
     die('Значение а > чем б');
 }
     die('Значение а < б');
+
+echo '<br>';
+$ret=testRet(5,8);
+var_dump($ret);

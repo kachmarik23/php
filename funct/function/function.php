@@ -18,3 +18,10 @@ function compare ($a,$b){
     return $result;
 }
 
+function testRet($a,$b){
+    if ($a<$b){
+        return true;
+    }
+    return false;
+}
+
