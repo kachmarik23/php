@@ -11,10 +11,10 @@
     a:hover{color: red}
     a:active{color: yellow}
     ul {
-      list-style-type: none;
+      list-style-type: none;/*убрать флажок в списке*/
       margin: 0;
       padding: 0;
-      overflow: hidden;
+      overflow: hidden;/*Отображается только область внутри элемента, остальное будет скрыто*/
       background-color: #333333;
 
     }
