@@ -9,6 +9,7 @@ const  DUMP_FILE = DUMP.'/newfile.json';
 /**
  * @param $dir
  * @return array|false
+ * $contents = (scandir($dir)); - просмотр директории
  */
 function getFilesInDirectory ($dir){
     $contents = (scandir($dir));
