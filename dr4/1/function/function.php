@@ -9,16 +9,19 @@ function viewTextarea()
     return $html;
 }
 function getCommonWords($a,$b){
+    if(empty($a)||empty($b)){
+       die('Введите данные');
+    }
     $a=explode(" ", $a);
     $b=explode(" ", $b);
     $countA=count($a);
-    $a_b='';
+    $a_b=[];
     for ($i=0; $i<$countA; $i++){
         $itemA=array_shift($a);
 
         foreach ($b as $value){
             if ($itemA==$value){
-                $a_b.=$value.' ';
+                $a_b[]=$value;
             }
         }
     }
