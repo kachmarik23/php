@@ -12,13 +12,18 @@
  */
 function writeDat()
 {
+    $patch_to_upload='images_storage/';
+    $file=$_FILES['file'];
+    $filename=$patch_to_upload.$file['name'];
+    move_uploaded_file($file['tmp_name'],$filename);
     if (empty($_REQUEST['name']) || empty($_REQUEST['age'])) {
         die('Нет данных');
     }
     $name = readData();
     $name[] = [
         'name' => $_REQUEST['name'],
-        'age' => $_REQUEST['age']
+        'age' => $_REQUEST['age'],
+        'file' => $filename
     ];
     $json_Data = json_encode($name);
     file_put_contents('users/users', $json_Data);
