@@ -29,13 +29,13 @@ padding: 5px; padding-top: 15px">' . $fileOpen . '</div>';
 function fileWrite($dir, $fname)
 {
     $text = strip_tags($_REQUEST['text'], '<b>');
-    $mat=file_get_contents($dir.'mat.txt');
-    $pattern='/['.$mat.']/i';
-    if(preg_match($pattern,$text)){
-        $text='Некорректный комментарий';
+    $mat = file_get_contents($dir . 'mat.txt');
+    $pattern = '/[' . $mat . ']/i';
+    if (preg_match($pattern, $text)) {
+        $text = 'Некорректный комментарий';
     }
-    if(empty($_REQUEST['name'])){
-        $_REQUEST['name']='<b>Anonymous</b>';
+    if (empty($_REQUEST['name'])) {
+        $_REQUEST['name'] = '<b>Anonymous</b>';
     }
     $name = $_REQUEST['name'];
     if (!empty($text)) {
