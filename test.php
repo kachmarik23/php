@@ -1,8 +1,7 @@
 <?php
-$s='<p>Созерцание непредсказуемо. Структурализм абстрактен.</p>';
-str_trim($s);
-function str_trim($s){
-    $s = trim($s, '</p>');
-    //$s = explode('/', $s);
-    echo $s;
+if (preg_match("/[\bweb\b \bthe\b]/i", "PHP is the website scripting language of choice.")) {
+    echo "Вхождение найдено.";
+} else {
+    echo "Вхождение не найдено.";
 }
+
