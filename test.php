@@ -1,7 +1,10 @@
 <?php
-if (preg_match("/[\bweb\b \bthe\b]/i", "PHP is the website scripting language of choice.")) {
-    echo "Вхождение найдено.";
-} else {
-    echo "Вхождение не найдено.";
+$string='а васька слушает да ест';
+echo mb_ucfirst($string);
+function mb_ucfirst($string) {
+    $fc = mb_strtoupper(mb_substr($string, 0, 1));
+    return $fc.mb_substr($string, 1);
 }
+
+
 
