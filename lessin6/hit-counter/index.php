@@ -1,4 +1,8 @@
 <?php
+$visits=isset($_COOKIE['visiting'])?$_COOKIE['visiting']:0;
+$visits++;
+setcookie('visiting',$visits,time()+3600);
+
 if (isset($_POST['color'])){
     setcookie('color', $_POST['color']);
     $_COOKIE['color']=$_POST['color'];
@@ -22,5 +26,8 @@ $color=!empty($_COOKIE['color']) ? $_COOKIE['color'] : 'grey';
     <input type="submit" value="Отправить">
 
 </form>
+<footer>
+    Вы посетили эту страницу <?php echo $visits ?> раз;
+</footer>
 </body>
 </html>
