@@ -16,7 +16,8 @@ function openTextFile()
     $n = $_REQUEST['n'];
     $file = file_get_contents(FILE);
     echo 'Фаил до трансформации:' . '<br>' . $file;
-    $patter = "|[а-яё]|is";
+    $patter = "|[а-яё]|is";// определяем если язык русский в русском занимает 2 байта символ i регистронезависимый
+    // поиск, s - оиск по нескольким словам
     if (preg_match($patter, $file)) {
         $n *= 2;
     }
