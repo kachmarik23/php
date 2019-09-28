@@ -14,7 +14,7 @@ $res = $db->query(" INSERT INTO `categories` SET `name`='Категория ".ra
 if (!$res){
     die ("Не удалось вставить строку: (" . $db->errno . ") " . $db->error);
 }
-
+$db->affected_rows;
 $new_id=$db->insert_id;// выясняем новое id
 echo  $new_id;
 $res = $db->query("SELECT * FROM `categories` WHERE `id`= $db->insert_id LIMIT 1");
