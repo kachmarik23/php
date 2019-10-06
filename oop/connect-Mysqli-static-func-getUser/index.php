@@ -1,6 +1,6 @@
 <?php
 
-class DbMysqli
+class DbMysqli //подключение к БД исключение множественных подключений
 {
     private static $db;
     public static function getInstants(){
@@ -37,7 +37,7 @@ class Users
             $res['login'],
             $res['pass']
         );
-       return $users;
+        return $users;
 
     }
 

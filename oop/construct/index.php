@@ -4,7 +4,7 @@ class Phone
     public $name;
     public $storage;
 
-    public function __construct($name,$storage)
+    public function __construct($name,$storage)//консируктор
     {
         $this->name = $name;
         $this->storage=$storage;

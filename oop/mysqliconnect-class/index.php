@@ -1,5 +1,5 @@
 <?php
-class DB
+class DB //статическое подключение к БД исключение множественных подключений
 {
     private static $db;
     public static function getInstance()
