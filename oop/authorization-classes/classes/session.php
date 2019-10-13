@@ -15,7 +15,7 @@ class Session
 
     public static function setUser($userData)
     {
-        $_SESSION['user'] = $userData;
+        $_SESSION['user'] = $userData;//записываем данные пользователя из класса User
 
     }
     public static function getUserID(){
@@ -26,7 +26,7 @@ class Session
     {
         unset($_SESSION['user']);
 
-        header('Location: /oop/authorization/index.php?action=login');
+        header('Location: /oop/authorization-classes/index.php?action=login');
     }
 
     public static function checkUser()

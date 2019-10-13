@@ -28,7 +28,7 @@ class User
             $data['login'],
             $data['pass']
         );
-        Session::setUser($data);
+        Session::setUser($data);//записываем данные в сесию
 
         return $user;
 
