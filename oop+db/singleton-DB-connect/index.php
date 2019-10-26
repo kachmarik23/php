@@ -3,15 +3,15 @@ require_once 'DB.php';
 class A
 {
     public function getData(){
-        $db=DB::getInstance();
+        $db=DBh::getInstance();
     }
 }
 class B
 {
     public function getData(){
-        $db=DB::getInstance();
-        $db=DB::getInstance();
-        $db=DB::getInstance();
+        $db=DBh::getInstance();
+        $db=DBh::getInstance();
+        $db=DBh::getInstance();
     }
 }
 $a=new A();

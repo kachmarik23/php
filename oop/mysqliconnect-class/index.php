@@ -18,10 +18,10 @@ class DB //статическое подключение к БД исключе�
     }
 }
 
-$db = DB::getInstance();
-$db = DB::getInstance();
-$db = DB::getInstance();
-$db = DB::getInstance();
-$db = DB::getInstance();
-$db = DB::getInstance();
-$db = DB::getInstance();
+$db = DBh::getInstance();
+$db = DBh::getInstance();
+$db = DBh::getInstance();
+$db = DBh::getInstance();
+$db = DBh::getInstance();
+$db = DBh::getInstance();
+$db = DBh::getInstance();
